@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import sql from '@/lib/db'
 import { StatusBadge } from '@/components/status-badge'
 import { AlertCircle, CheckCircle2, Zap, Clock } from 'lucide-react'
