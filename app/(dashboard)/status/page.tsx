@@ -32,7 +32,7 @@ async function getRecentStatusEvents() {
   return sql`
     SELECT
       id, errored_item AS vendor, error_message, url,
-      first_seen, last_seen, status
+      created_at AS first_seen, last_seen, status
     FROM technology.d_error_tracking
     WHERE location = 'status_page'
     ORDER BY last_seen DESC NULLS LAST
