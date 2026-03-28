@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Make Error Routing",
+    "description": "Primary: n8n error flow. Failover: Make prod flow.",
+    "connections": [
+      {
+        "id": "REPLACE_WITH_HOOKDECK_CONNECTION_ID",
+        "label": "n8n prod flow",
+        "primary": true
+      },
+      {
+        "id": "REPLACE_WITH_HOOKDECK_CONNECTION_ID",
+        "label": "Make prod flow",
+        "primary": false
+      }
+    ]
+  }
+]
