@@ -1,6 +1,5 @@
-import type { NextConfig } from 'next'
-
-const config: NextConfig = {
+/** @type {import('next').NextConfig} */
+const config = {
   experimental: {
     serverActions: { allowedOrigins: ['localhost:3000', process.env.VERCEL_URL ?? ''] },
   },
